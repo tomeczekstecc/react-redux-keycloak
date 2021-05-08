@@ -18,7 +18,7 @@ https://www.npmjs.com/package/keycloak-js
 
 ## uruchom apkę - opcja 1 (wymagany Docker):
 
-1. W konsoli w folderze głównym projektu wpisz polecenie `` (parę minut to potrwa -  łacznie ze ściągnięciem obrazów z docker-hub)
+1. W konsoli w folderze głównym projektu wpisz polecenie `docker-compose up -d --build` (parę minut to potrwa -  łacznie ze ściągnięciem obrazów z docker-hub)
 2. Otwórz stronę: `http://localhost:3000`
 
 ## Uruchom apkę - opcja 2 (wymagany NodeJs):
