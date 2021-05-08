@@ -18,8 +18,9 @@ const App = ({ keycloak, authenticated, loginUser, setUser, user }) => {
 
   return (
     <>
-      <Navbar />
+      <Navbar keycloak={keycloak} />
       <CartContainer />
+
     </>
   );
 };
