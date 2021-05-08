@@ -13,12 +13,12 @@ https://www.npmjs.com/package/keycloak-js
 ## Projekt zakłada, że instancja Keycloak działa na porcie 8080:
 
 1. Dodaj klienta w zakładcę `Clients` o nazwie "josm"
-2. Dodaj przynajmniej 1 usera - ustaw hasło lub hasło tyczasowe
+2. Dodaj przynajmniej 1 usera - ustaw hasło lub hasło tyczasowe w zakładce `Credentials`
 3. Dodaj "http://localhost:3000/" w polu `Root URL` i zapisz
 
 ## uruchom apkę - opcja 1 (wymagany Docker):
 
-1. W konsoli w folderze głównym projektu wpisz polecenie `docker-compose up -d --build` (parę minut to potrwa -  łacznie ze ściągnięciem obrazów z docker-hub)
+1. W konsoli w folderze głównym projektu wpisz polecenie `docker-compose up -d --build` (przy pierwszym razie parę minut to potrwa -  łacznie ze ściągnięciem obrazu)
 2. Otwórz stronę: `http://localhost:3000`
 
 ## Uruchom apkę - opcja 2 (wymagany NodeJs):
