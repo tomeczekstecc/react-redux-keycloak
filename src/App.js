@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { login, setUserInfo } from './actions';
 
-// components
-import Navbar from './components/Navbar';
-import CartContainer from './components/CartContainer';
+import Shop from './pages/shop';
+import User from './pages/user';
 
-const App = ({ keycloak, authenticated, loginUser, setUser, user }) => {
+const App = ({ keycloak, authenticated, loginUser, setUser }) => {
   useEffect(() => {
     console.log(authenticated);
 
@@ -14,20 +14,30 @@ const App = ({ keycloak, authenticated, loginUser, setUser, user }) => {
       loginUser();
       setUser();
     }
+    // eslint-disable-next-line
   }, []);
 
   return (
-    <>
-      <Navbar keycloak={keycloak} />
-      <CartContainer />
-
-    </>
+    <Router>
+      <Switch>
+        <Route
+          exact
+          path='/shop'
+          component={() => <Shop keycloak={keycloak} />}
+        />
+        <Route
+          exact
+          path='/user'
+          component={() => <User keycloak={keycloak} />}
+        />
+      </Switch>
+    </Router>
   );
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   const { user } = ownProps;
-      console.log(user);
+  console.log(user);
   return {
     loginUser: () => dispatch(login()),
     setUser: () => dispatch(setUserInfo(user)),

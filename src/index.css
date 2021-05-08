@@ -3,7 +3,7 @@
 Fonts
 ===============
 */
-@import url("https://fonts.googleapis.com/css?family=Catamaran:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
 /*
 =============== 
@@ -12,18 +12,18 @@ Variables
 */
 
 :root {
-  --clr-primary: #2680c0;
+  --clr-primary: #0f334d;
   --clr-primary-dark: hsl(205, 100%, 21%);
-  --clr-primary-light: hsl(205, 84%, 74%);
+  --clr-primary-light: hsl(234, 83%, 74%);
   --clr-grey-1: #102a42;
   --clr-grey-5: #617d98;
   --clr-grey-10: #f1f5f8;
   --clr-white: #fff;
-  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-dark: rgb(149, 51, 51);
   --clr-red-light: hsl(360, 71%, 66%);
-  --ff-primary: "Catamaran", sans-serif;
+  --ff-primary: 'Montserrat', sans-serif;
   --transition: all 0.3s linear;
-  --spacing: 0.25rem;
+  --spacing: 0.15rem;
   --radius: 0.5rem;
   --large-screen-width: 1170px;
   --small-screen-width: 90vw;
@@ -147,7 +147,7 @@ nav svg {
 }
 .amount-container {
   position: absolute;
-  top: -0.75rem;
+  top: 1.5rem;
   right: -0.75rem;
   width: 1.75rem;
   height: 1.75rem;
@@ -208,10 +208,8 @@ Cart
   padding: 0.5rem 1rem;
   color: var(--clr-red-dark);
   margin-top: 2.25rem;
-    box-shadow: none;
+  box-shadow: none;
 }
-
-
 
 .clear-btn:hover {
   background: var(--clr-red-light);
@@ -274,8 +272,14 @@ Cart Item
   font-size: 1.25rem;
   line-height: 1;
 }
-.wylog-text{
+.wylog-text {
   letter-spacing: 1px;
   color: white;
   display: block;
+}
+
+.link-container {
+  color: white;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: bold;
 }

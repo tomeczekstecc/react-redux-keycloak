@@ -1,3 +1,22 @@
+## Funkcje:
+1. Logowanie,
+2. Wylogowanie,
+3. Pdgląd danych zalogowanego użytkowenika
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
