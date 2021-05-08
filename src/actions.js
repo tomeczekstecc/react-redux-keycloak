@@ -16,5 +16,6 @@ export const login = () => {
 };
 
 export const setUserInfo = (user) => {
-  return { type: SET_USER_INFO, payload:user};
+  console.log(user, 'action');
+  return { type: SET_USER_INFO, payload: user};
 };

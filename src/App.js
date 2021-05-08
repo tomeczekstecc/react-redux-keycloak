@@ -1,24 +1,20 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { LOGIN, login, setUserInfo } from './actions';
-import Keycloak from 'keycloak-js';
+import { login, setUserInfo } from './actions';
+
 // components
 import Navbar from './components/Navbar';
 import CartContainer from './components/CartContainer';
 
-const  App = ({ loginUser, setUser }) => {
+const App = ({ keycloak, authenticated, loginUser, setUser, user }) => {
   useEffect(() => {
-    const keycloak = Keycloak('./keycloak.json');
-    keycloak.init({ onLoad: 'login-required' }).then(async (authenticated) => {
-        if (authenticated) {
-            loginUser();
-            setUser(keycloak);
+    console.log(authenticated);
 
-        }
-    });
+    if (authenticated) {
+      loginUser();
+      setUser();
+    }
   }, []);
-
-  // cart setup
 
   return (
     <>
@@ -26,13 +22,14 @@ const  App = ({ loginUser, setUser }) => {
       <CartContainer />
     </>
   );
-}
+};
 
 const mapDispatchToProps = (dispatch, ownProps) => {
-  const { id, amount } = ownProps;
+  const { user } = ownProps;
+      console.log(user);
   return {
     loginUser: () => dispatch(login()),
-    setUser: () => dispatch(setUserInfo())
+    setUser: () => dispatch(setUserInfo(user)),
   };
 };
 export default connect(null, mapDispatchToProps)(App);

@@ -4,7 +4,6 @@ import {
   GET_TOTALS,
   INCREASE,
   REMOVE,
-  removeItem,
   LOGIN,
   TOGGLE_AMOUNT,
   SET_USER_INFO,
@@ -16,6 +15,7 @@ const initialStore = {
   total: 0,
   amount: 0,
   authenticated: false,
+  user: {}
 };
 
 function reducer(state = initialStore, action) {
@@ -25,7 +25,7 @@ function reducer(state = initialStore, action) {
 
     case DECREASE:
       let tempCart1 = state.cart.map((i) => {
-        if (i.id === action.payload.id) {``
+        if (i.id === action.payload.id) {
           i = {
             ...i,
             amount: i.amount - 1,
@@ -98,9 +98,8 @@ function reducer(state = initialStore, action) {
     case LOGIN:
       return { ...state, authenticated: true };
 
-    // case SET_USER_INFO:
-
-    //   return { ...state, user: action.payload.user };
+    case SET_USER_INFO:
+      return { ...state, user: action.payload};
 
     default:
       return state;
