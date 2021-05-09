@@ -10,22 +10,16 @@
 
 https://www.npmjs.com/package/keycloak-js
 
-## Projekt zakłada, że instancja Keycloak działa na porcie 8080:
-1. Dodaj realm o nbazwie "josm"
-2. Dodaj klienta w zakładcę `Clients` o nazwie "josm"
-3. Dodaj przynajmniej 1 usera - ustaw hasło lub hasło tyczasowe w zakładce `Credentials`
-4. Dodaj "http://localhost:3000/" w polu `Root URL` i zapisz
+## Uruchomienie (wymagany Docker)
+1. Sklonuj repo z `https://github.com/tomeczekstecc/react-redux-keycloak`
+1. W konsoli w folderze głównym projektu wpisz polecenie `docker-compose up -d --build`
+1. Projekt automatycznie utworzy realm o nazwie "rrk-test1" i samodzielnie utworzy clienta o nazwie "rrk-react"
+2. Dodaj przynajmniej 1 usera w zakładce `Users` - ustaw hasło lub hasło tyczasowe w zakładce `Credentials`
+
 
 ## uruchom apkę - opcja 1 (wymagany Docker):
 
-1. W konsoli w folderze głównym projektu wpisz polecenie `docker-compose up -d --build` (przy pierwszym razie parę minut to potrwa - łacznie ze ściągnięciem obrazu)
 2. Otwórz stronę: `http://localhost:3000`
-
-## Uruchom apkę - opcja 2 (wymagany Docker + NodeJs):
-
-1. Sklonuj repo z `https://github.com/tomeczekstecc/react-redux-keycloak.git`
-2. Zainstaluj wszystkie dependecies poleceniem w konsoli: `npm i`
-3. W konsoli wpisz: `npm start` - apka uruchomi się automatyczne na porcie 3000
 
 ---
 
