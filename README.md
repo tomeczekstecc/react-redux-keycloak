@@ -14,7 +14,7 @@ https://www.npmjs.com/package/keycloak-js
 
 1. Sklonuj repo z `https://github.com/tomeczekstecc/react-redux-keycloak`
 2. W konsoli w folderze głównym projektu wpisz polecenie `docker-compose up -d --build`
-3. Przejdź do administracji Keycloak (`http://localhost:8080/auth`)Username: `admin`, Hasło: `admin`. Projekt automatycznie już utworzył realm o nazwie "rrk-test1" i samodzielnie utworzy clienta o nazwie "rrk-react".
+3. Przejdź do administracji Keycloak (`http://localhost:8080/auth`, username: `admin`, Hasło: `admin`). Projekt automatycznie już utworzył realm o nazwie "rrk-test1" i samodzielnie utworzy clienta o nazwie "rrk-react".
 4. Dodaj przynajmniej 1 usera w zakładce `Users` - ustaw hasło lub hasło tyczasowe w zakładce `Credentials`
 5. Otwórz stronę: `http://localhost:3000` i zaloguj się danymi utworzonego usera
 
