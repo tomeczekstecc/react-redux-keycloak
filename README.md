@@ -21,7 +21,10 @@ https://www.npmjs.com/package/keycloak-js
 ---
 
 ## PoC
+
 https://1drv.ms/v/s!AjVT2CLlV9igoocT5P0lj-ZUtYAa9A?e=aggak3
+
+https://1drv.ms/u/s!AjVT2CLlV9igoocUkWh85jqKqsx_NA?e=RqadSB
 
 
 ### Dzięki:
