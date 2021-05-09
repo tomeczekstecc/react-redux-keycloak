@@ -10,19 +10,19 @@ const Home = () => {
       <div className='home-container'>
         <h1 className='title'>Allegro 2</h1>
         <div className='cards'>
-          <div className='card'>
-            <Link to='/shop'>
+          <Link to='/shop'>
+            <div className='card'>
               <GrShop className='icon-card' />
-            </Link>
-            <div className='photo'></div>
-          </div>
+              <div className='photo'></div>
+            </div>
+          </Link>
 
-          <div className='card'>
-            <Link to='/user'>
+          <Link to='/user'>
+            <div className='card'>
               <GrUserSettings className='icon-card' />
-            </Link>
-            <div className='photo'></div>
-          </div>
+              <div className='photo'></div>
+            </div>
+          </Link>
         </div>
       </div>
     </>
