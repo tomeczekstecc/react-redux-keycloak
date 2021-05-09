@@ -10,7 +10,7 @@ services:
     ports:
       - 3000:3000
     volumes:
-      - /app
+      # - /app
       - react-app-data:/app/node_modules
     depends_on:
       - keycloack
@@ -22,6 +22,7 @@ services:
     environment:
       - KEYCLOAK_USER=admin
       - KEYCLOAK_PASSWORD=admin
+      - KEYCLOAK_IMPORT=./realm-import.json
       - DB_VENDOR=H2
     volumes:
       - ./data/keycloak:/tmp
