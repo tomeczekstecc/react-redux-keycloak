@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import { GrUserSettings, GrShop } from 'react-icons/gr';
 import Navbar from '../components/Navbar';
 
-const Home = () => {
+const Home = ({ keycloak }) => {
   return (
     <>
-      <Navbar />
+      <Navbar keycloak={keycloak} />
       <div className='home-container'>
         <h1 className='title'>Allegro 2</h1>
         <div className='cards'>

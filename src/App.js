@@ -31,7 +31,7 @@ const App = ({ keycloak, authenticated, loginUser, setUser }) => {
           path='/user'
           component={() => <User keycloak={keycloak} />}
         />
-        <Route exact path='/' component={Home} />
+        <Route exact path='/' component={() => <Home keycloak={keycloak} />} />
       </Switch>
     </Router>
   );
