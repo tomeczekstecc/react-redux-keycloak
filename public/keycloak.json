@@ -1,8 +1,8 @@
 {
-  "realm": "josm",
+  "realm": "rrk-test1",
   "auth-server-url": "http://localhost:8080/auth/",
   "ssl-required": "external",
-  "resource": "josm",
+  "resource": "rrk-react",
   "public-client": true,
   "confidential-port": 0
 }

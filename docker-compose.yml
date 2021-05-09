@@ -24,7 +24,7 @@ services:
       - KEYCLOAK_PASSWORD=admin
       - DB_VENDOR=H2
     volumes:
-      - ./data/keycloak:/var/lib/keycloak
+      - ./data/keycloak:/tmp
 
 volumes:
   react-app-data:

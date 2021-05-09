@@ -13,7 +13,7 @@ const CartContainer = ({ cart = [], total, dispatch }) => {
       <section className='cart'>
         <header>
           <h2>Koszyk</h2>
-          <h4 className='empty-cart'>is currently empty</h4>
+          <h4 className='empty-cart'>jest pusty</h4>
         </header>
       </section>
     );
