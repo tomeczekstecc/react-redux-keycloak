@@ -5,6 +5,7 @@ import { login, setUserInfo } from './actions';
 
 import Shop from './pages/shop';
 import User from './pages/user';
+import Home from './pages/Home';
 
 const App = ({ keycloak, authenticated, loginUser, setUser }) => {
   useEffect(() => {
@@ -30,6 +31,7 @@ const App = ({ keycloak, authenticated, loginUser, setUser }) => {
           path='/user'
           component={() => <User keycloak={keycloak} />}
         />
+        <Route exact path='/' component={Home} />
       </Switch>
     </Router>
   );
