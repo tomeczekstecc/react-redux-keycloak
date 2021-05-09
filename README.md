@@ -20,6 +20,10 @@ https://www.npmjs.com/package/keycloak-js
 
 ---
 
+## PoC
+https://1drv.ms/v/s!AjVT2CLlV9igoocT5P0lj-ZUtYAa9A?e=aggak3
+
+
 ### Dzięki:
 
 https://www.johnsmilga.com/
